@@ -1,0 +1,137 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    max-width: 55%;
+    min-height: 60%;
+    padding: 20px;
+    background-color: #171E27;
+    color: #FBF7F4;
+    border-radius: 25px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto; /* Centraliza horizontalmente */
+    border: 45px solid black;
+}
+
+.ranking-container {
+    max-width: 40%;
+    min-height: 50%;
+    padding: 20px;
+    background-color: dimgray;
+    color: #FBF7F4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto; /* Centraliza horizontalmente */
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column; /* Mudei para column para suportar a linha do reset */
+    padding: 20px;
+    background-color: #FBF7F4;
+    border: 2px solid darkolivegreen;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.keyboard button {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.keyboard button:hover {
+    background-color: #e0e0e0;
+}
+
+.keyboard button:active {
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+#reset-button {
+    width: 225px;
+    height: 45px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: lime;
+    color: #171E27;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#reset-button:hover {
+    background-color: limegreen;
+}
+
+/* Outros estilos permanecem iguais */
+.player-info {
+    display: flex;
+    flex-direction: column;
+}
+#player-name, #player-score {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+.word-container {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #FBF7F4;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.guesses {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.ranking-container h2 {
+    margin: 0 0 10px 0;
+    align-self: center;
+}
+#ranking-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+#ranking-list li {
+    margin: 5px 0;
+}
