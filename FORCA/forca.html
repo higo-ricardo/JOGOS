@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="forca3.css">
 </head>
 <body>
-    <header>
-    </header>
+    <header></header>
     <main>
         <section class="ranking-container">
             <h2>Ranking</h2>
@@ -27,7 +26,17 @@
             <div class="keyboard"></div>
         </section>
     </main>
+    <!-- Modal para dificuldade -->
+    <div id="difficulty-modal" class="modal">
+        <div class="modal-content">
+            <h2>Escolha a Dificuldade</h2>
+            <button id="easy-btn">Fácil</button>
+            <button id="medium-btn">Médio</button>
+            <button id="hard-btn">Difícil</button>
+        </div>
+    </div>
     <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
     <script src="forca3.js"></script>
+    <!-- Script do Cloudflare omitido para brevidade -->
 </body>
 </html>
